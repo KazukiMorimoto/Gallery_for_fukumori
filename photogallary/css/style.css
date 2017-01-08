@@ -1,164 +1,243 @@
 @charset "UTF-8";
+
 /**************************/
+
+
 /*Common code CF and reset*/
+
+
 /**************************/
-.cf:before, .cf:after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
-}
+
+.cf:before,
 .cf:after {
-	clear: both;
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
+
+.cf:after {
+    clear: both;
+}
+
 img {
-	vertical-align: bottom;
+    vertical-align: bottom;
 }
+
 body {
-	font-size: 18px;
-	font-family: "Times New Roman", Times, serif;
-	color: 000;
-	line-height: 1em;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: 000;
+    line-height: 1em;
 }
+
 #wrapper {
-	clear: both;
-	width: 836px;
-	margin-left:auto;
-	margin-right:auto;
-	padding-left:5px;
+    clear: both;
+    width: 836px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
 }
-/**************************/
-/*Logo: 		          */
-/**************************/
-#logo{
-	margin-top:72px;
-}
-/**************************/
-/*Global navigation       */
-/**************************/
+
+
 /*Chalkdusterの読み込み(webフォント)*/
+
 @font-face {
     font-family: 'Chalkduster';
-    src:url('Chalkduster.ttf.woff') format('woff'),
-        url('Chalkduster.ttf.svg#Chalkduster') format('svg'),
-        url('Chalkduster.ttf.eot'),
-        url('Chalkduster.ttf.eot?#iefix') format('embedded-opentype'); 
+    src: url('Chalkduster.ttf.woff') format('woff'), url('Chalkduster.ttf.svg#Chalkduster') format('svg'), url('Chalkduster.ttf.eot'), url('Chalkduster.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'katyo';
+    src: url(../font/katyo.ttf) format('truetype'), url(../font/katyo.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**************************/
+
+
+/*Logo: 		          */
+
+
+/**************************/
+
+#logo {
+    margin-top: 72px;
+}
+
+#logo a {
+    font-size: 38px;
+    font-family: 'Chalkduster';
+    color: #95989A;
+    letter-spacing: -4.5px;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    color: #ffba00;
+}
+
+
+/**************************/
+
+
+/*Global navigation       */
+
+
+/**************************/
+
 #menu {
-	width: 100%;
-	list-style:none;
-	text-align: left;
-	margin:0;
-	padding:0;
-	margin-top:37px;
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
 }
+
 #menu li {
-	float: left;
+    float: left;
 }
+
 #menu li a {
-	display: block;
-	text-decoration: none;
-	margin-right:25px;
-	color:#95989A;
-	font-family: "Chalkduster"
+    display: block;
+    text-decoration: none;
+    margin-right: 25px;
+    color: #95989A;
+    font-family: "Chalkduster"
 }
-#menu li a:hover{
-	color:#FDCA41;
+
+#menu li a:hover {
+    color: #FFBA00;
 }
-#menu li:first-child{
-	margin-right:4px;
+
+#menu .activepage a {
+    color: #ffba00;
 }
+
+
 /**************************/
+
+
 /* top image: 			  */
+
+
 /**************************/
-#topimg img{
-	width:100%;
-	margin-top:20px;
+
+#topimg {
+    margin-top: 27px;
 }
+
+#topimg img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
 /**************************/
+
+
 /* footer   			  */
+
+
 /**************************/
-footer{
-	clear:both;
-	text-align: right;
+
+footer {
+    clear: both;
+    text-align: right;
+    color: #95989a;
 }
+
+
 /**************************/
+
+
+/*		about.html 	      */
+
+
+/**************************/
+
+#businessCard {
+    color: #95989a;
+}
+
+
+/**************************/
+
+
 /*		contact.html 	  */
+
+
 /**************************/
-#contact-section {
-	color: black;
+
+.contact-form p {
+    margin: 32px 0 0 0;
+    color: #95989A;
+    font-family: 'Chalkduster';
 }
-#contact_section p{
-	margin:0;
-	color:#95989A;
-}
-.contact-form input[type="text"], .contact-form textarea {
-	margin:0;
-	padding: 15px;
-	vertical-align: middle;
-	background: #fff;
-	border: 1px solid #ccc;
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	box-shadow: 2px;
-	transition: all .3s;
-	margin-bottom: 10px;
-}
-.contact-name, .contact-email {
-	width: 50%;
-}
+
+.contact-form input[type="text"],
 .contact-form textarea {
-	width: 85%;
-	height: 150px;
+    margin: 0;
+    padding: 15px;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: 2px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin-bottom: 10px;
 }
+
+.contact-name,
+.contact-email {
+    width: 50%;
+}
+
+.contact-form textarea {
+    width: 85%;
+    height: 150px;
+}
+
 .contact-form {
-	display: inline-block;
-	width: 100%;
-	font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
 }
+
 .btn-contact {
-	font-family: 'Chalkduster';
-	font-size: 18px;
-	font-weight: 300;
-	background: #FFF;
-	border: 1px solid #95989A;
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	transition: all .3s;
-	margin: 20px 0px;
+    font-family: 'Chalkduster';
+    font-size: 20px;
+    color: #95989a;
+    background: #FFF;
+    border: 1px solid #95989A;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
 }
-.send-button {
-	font-family: 'Dosis', sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	background: #B21709;
-	border: 1px solid #B21709;
-	color: white;
-	box-shadow: inset 0 1px 0 #9D1407;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	transition: all .3s;
-	margin: 20px 50px 20px 5px;
-	padding: 15px 35px;
+
+.btn-contact:hover {
+    color: #ffba00;
 }
-.back-button {
-	font-family: 'Dosis', sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	background: #F4F5E5;
-	border: 1px solid #F4F5E5;
-	color: #000000;
-	box-shadow: inset 0 1px 0 #E5E7C2;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	transition: all .3s;
-	margin: 20px 50px 20px 0px;
-	padding: 15px 35px;
-}
+
 #confirm_form {
-	margin: 100px 0;
-	line-height: 50px;
+    margin: 270px auto;
+    text-align: center;
+    font-family: 'katyo';
+    color: #95989A;
 }
-.confirm_space{
-	margin-left:10px;
+
+.confirm_space {
+    margin-left: 10px;
 }

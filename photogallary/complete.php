@@ -36,36 +36,30 @@ mb_internal_encoding("UTF-8");
 
 <body>
 <div id="wrapper">
-	<header>
-		<div id="logo">
-			<img src="img/nav/shouichifukumori.png">
-		</div>
-		<nav>
-			<ul id="menu">
-				<li><a href="##.html">Information</a></li>
-				<li><a href="photography.html">Photography</a></li>
-				<li><a href="##.html">Works</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="##.html">About</a></li>
-				<li><a href="##.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+        <header>
+            <div id="logo">
+                <a href="index.html">SHOUICHI FUKUMORI</a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="activepage"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 <div class="cf clearfloat"></div>
 <!-- Contact -->
 	<main>
 		<article>
 			<section id="confirm_form">
-				<p>お問い合わせありがとうございました。</p>
-                <p>入力を送信いたしました。確認をお願い致します。<p>
+				<p>確認メールを送信致しましたので、確認をお願い致します。</p>
 			</section>
 		</article>
 	</main>
-	<footer>
-		<div id="copyright">
-			<small>Copyright&copy;2016 TDP. ALL right reserved</small>
-		</div>
-	</footer>
 </div>
 </body>
 </html>
