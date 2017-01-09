@@ -39,6 +39,9 @@ body {
     padding-left: 5px;
 }
 
+#wrapper .activepage {
+    color: #ffba00;
+}
 
 /*Chalkdusterの読み込み(webフォント)*/
 
@@ -114,11 +117,6 @@ body {
 #menu li a:hover {
     color: #FFBA00;
 }
-
-#menu .activepage a {
-    color: #ffba00;
-}
-
 
 /**************************/
 
