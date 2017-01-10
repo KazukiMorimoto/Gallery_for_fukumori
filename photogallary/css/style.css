@@ -43,6 +43,7 @@ body {
     color: #ffba00;
 }
 
+
 /*Chalkdusterの読み込み(webフォント)*/
 
 @font-face {
@@ -118,6 +119,7 @@ body {
     color: #FFBA00;
 }
 
+
 /**************************/
 
 
@@ -161,6 +163,70 @@ footer {
 
 #businessCard {
     color: #95989a;
+}
+
+
+/**************************/
+
+
+/*		blog.html 	      */
+
+
+/**************************/
+
+#blog {
+    clear: both;
+    float: left;
+    width: 670px;
+}
+
+main #blog section h2 {
+    font-family: 'katyo';
+    font-size: 27px;
+    height: 25px;
+    color: #95989a;
+    border-bottom: solid 1px #606060;
+}
+
+#blog img {
+    margin-top: 33px;
+    max-width: 100%;
+}
+
+#blog p {
+    font-size: 18px;
+    font-family: 'katyo';
+    color: #141414;
+}
+
+#archive {
+    position: fixed;
+    top: 190px;
+    margin-left: 742px;
+    width: 70px;
+    color: #95989a;
+    text-align: left;
+}
+
+#archive h2 {
+    position: relative;
+    font-family: 'Chalkduster';
+    font-size: 14px;
+}
+
+.mokuji li {
+    font-family: 'katyo';
+    font-size: 11px;
+    list-style: none;
+}
+
+.mokuji li a {
+    text-decoration: none;
+    color: #95989a;
+}
+
+.mokuji li a:hover {
+    color: #ffba00;
 }
 
 
