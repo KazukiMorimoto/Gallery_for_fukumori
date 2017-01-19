@@ -37,7 +37,7 @@ $(function () {
             this.id = 'chapter-' + i;
             // リストを生成
             mokuji += '<li><a href="#' + this.id + '" >' + $(this).html() + '</a></li>\n';
-            if (i === 4) {
+            if (i === 15) {
                 return false;
             }
         });
@@ -55,6 +55,8 @@ $(function () {
             return false;
         });
     }
-    mokujimake();
 
+    setTimeout(function () {
+        mokujimake();
+    }, 1000);
 });

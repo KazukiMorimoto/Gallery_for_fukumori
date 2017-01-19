@@ -107,6 +107,10 @@ body {
     float: left;
 }
 
+#menu li:nth-child(2) {
+    margin-right: 3px;
+}
+
 #menu li a {
     display: block;
     text-decoration: none;
@@ -129,12 +133,12 @@ body {
 /**************************/
 
 #topimg {
-    margin-top: 27px;
+    margin-top: 25px;
 }
 
 #topimg img {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -161,8 +165,94 @@ footer {
 
 /**************************/
 
-#businessCard {
+#about {
+    margin-left: 25px;
+    font-family: 'katyo';
     color: #95989a;
+}
+
+#about h2 {
+    margin-top: 38px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#about h2 span {
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+#about li {
+    list-style: none;
+}
+
+#born {
+    margin-top: 45px;
+}
+
+#born li {
+    margin-top: 21px;
+}
+
+#born p {
+    font-size: 18px;
+}
+
+#born .about_detail {
+    margin-left: 18px;
+}
+
+#about h3 {
+    font-size: 18px;
+    margin-top: 38px;
+}
+
+#career li {
+    margin-top: 21px;
+}
+
+.btn-sns {
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn-sns a {
+    text-decoration: none;
+}
+
+.btn-sns img {
+    width: 15px;
+}
+
+.btn-sns:first-child {
+    margin-right: 30px;
+}
+
+.btn-sns-box {
+    color: #95989a;
+    background: #FFF;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-sns-box:hover {
+    color: #ffba00;
+}
+
+#btn-twitter {
+    width: 90px;
+    border: 1px solid #2B9EEA;
+}
+
+#btn-insta {
+    width: 110px;
+    border: 1px solid #BB13F8;
 }
 
 
@@ -182,18 +272,22 @@ footer {
 
 main #blog section h2 {
     font-family: 'katyo';
-    font-size: 27px;
-    height: 25px;
-    color: #95989a;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 35px;
+    padding-bottom: 5px;
+    color: #141414;
     border-bottom: solid 1px #606060;
 }
 
 #blog img {
-    margin-top: 33px;
+    margin-top: 15px;
     max-width: 100%;
 }
 
 #blog p {
+    padding-top: 15px;
+    padding-bottom: 40px;
     font-size: 18px;
     font-family: 'katyo';
     color: #141414;
@@ -201,9 +295,9 @@ main #blog section h2 {
 
 #archive {
     position: fixed;
-    top: 190px;
+    top: 184px;
     margin-left: 742px;
-    width: 70px;
+    width: 120px;
     color: #95989a;
     text-align: left;
 }
@@ -211,12 +305,14 @@ main #blog section h2 {
 #archive h2 {
     position: relative;
     font-family: 'Chalkduster';
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .mokuji li {
     font-family: 'katyo';
-    font-size: 11px;
+    margin-top: 3px;
+    font-size: 13px;
     list-style: none;
 }
 
@@ -226,6 +322,10 @@ main #blog section h2 {
 }
 
 .mokuji li a:hover {
+    color: #ffba00;
+}
+
+current {
     color: #ffba00;
 }
 
@@ -278,8 +378,8 @@ main #blog section h2 {
 }
 
 .btn-contact {
-    font-family: 'Chalkduster';
     font-size: 20px;
+    font-family: 'Chalkduster';
     color: #95989a;
     background: #FFF;
     border: 1px solid #95989A;
