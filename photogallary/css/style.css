@@ -36,10 +36,25 @@ body {
     width: 836px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5px;
 }
 
-#wrapper .activepage {
+#aboutwrapper {
+    /*margin-left: -16px;*/
+}
+
+#contactwrapper {
+    /*margin-left: -16px;*/
+}
+
+#workwrapper {
+    margin-left: 15px;
+}
+
+#blogwrapper {
+    margin-left: 20px;
+}
+
+body #wrapper .activepage {
     color: #ffba00;
 }
 
@@ -95,7 +110,6 @@ body {
 /**************************/
 
 #menu {
-    width: 100%;
     list-style: none;
     text-align: left;
     margin: 0;
@@ -145,21 +159,6 @@ body {
 /**************************/
 
 
-/* footer   			  */
-
-
-/**************************/
-
-footer {
-    clear: both;
-    text-align: right;
-    color: #95989a;
-}
-
-
-/**************************/
-
-
 /*		about.html 	      */
 
 
@@ -173,13 +172,17 @@ footer {
 
 #about h2 {
     margin-top: 38px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 100;
 }
 
 #about h2 span {
     font-size: 28px;
     padding-left: 20px;
+}
+
+#about h3 {
+    font-weight: 100;
 }
 
 #about li {
@@ -198,7 +201,7 @@ footer {
     font-size: 18px;
 }
 
-#born .about_detail {
+.about_detail {
     margin-left: 18px;
 }
 
@@ -259,6 +262,24 @@ footer {
 /**************************/
 
 
+/* footer   			  */
+
+
+/**************************/
+
+footer {
+    clear: both;
+    text-align: right;
+    color: #95989a;
+}
+
+
+/**************************/
+
+
+/**************************/
+
+
 /*		blog.html 	      */
 
 
@@ -270,6 +291,10 @@ footer {
     width: 670px;
 }
 
+main #blog section {
+    position: relative;
+}
+
 main #blog section h2 {
     font-family: 'katyo';
     font-weight: normal;
@@ -278,11 +303,23 @@ main #blog section h2 {
     padding-bottom: 5px;
     color: #141414;
     border-bottom: solid 1px #606060;
+    width: 97%;
+}
+
+.date {
+    position: absolute;
+    top: -12px;
+    font-size: 14px;
+    font-weight: 100;
+    left: 0;
+    text-align: right;
+    width: 97%;
+    font-family: "katyo";
 }
 
 #blog img {
     margin-top: 15px;
-    max-width: 100%;
+    max-width: 97%;
 }
 
 #blog p {
@@ -294,10 +331,11 @@ main #blog section h2 {
 }
 
 #archive {
+    clear: both;
     position: fixed;
     top: 184px;
     margin-left: 742px;
-    width: 120px;
+    width: 110px;
     color: #95989a;
     text-align: left;
 }
@@ -327,6 +365,118 @@ main #blog section h2 {
 
 current {
     color: #ffba00;
+}
+
+
+/**************************/
+
+
+/*		photography.html 	  */
+
+
+/**************************/
+
+#pagetop {
+    position: fixed;
+    bottom: 100px;
+    margin-left: 742px;
+    display: none;
+}
+
+#pagetop:hover {
+    cursor: pointer;
+}
+
+#pagetop img {
+    width: 80px;
+}
+
+#photopage {
+    clear: both;
+}
+
+#photopage ul {
+    margin: 0;
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 25px;
+}
+
+#photopage li {
+    float: left;
+    margin-right: 20px;
+}
+
+#photopage li:last-child {
+    margin-right: 0;
+}
+
+#photopage li p {
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+#photopage li img {
+    width: 40px;
+}
+
+#photopage li a {
+    font-size: 29px;
+    font-family: 'Chalkduster';
+    color: #95989A;
+    text-decoration: none;
+    display: block;
+}
+
+#photopage li a:hover {
+    color: #FFBA00;
+}
+
+#photos {
+    clear: both;
+    margin-top: 10px;
+}
+
+#photos li {
+    float: left;
+    display: block;
+    margin-right: 16.5px;
+    margin-top: 16.5px;
+}
+
+#photos img {
+    width: 90px;
+}
+
+#photos li:nth-child(8n) {
+    margin-right: 0px;
+}
+
+#photo-gallery ul {
+    clear: both;
+    list-style: none;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: block;
+    text-align: center;
+}
+
+#overlay {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#overlay img {
+    margin: 7% auto 0%;
+    height: 620px;
+    border-radius: 0px;
 }
 
 

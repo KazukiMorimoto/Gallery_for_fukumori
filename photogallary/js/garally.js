@@ -26,6 +26,7 @@ $(function () {
     $("#overlay").click(function () {
         $("#overlay").hide();
     });
+
     /* ——————————————————-記事の見出しから目次作成——————————————————–*/
     function mokujimake() {
         var mokuji = ''; // 目次のHTML格納場所
@@ -59,4 +60,5 @@ $(function () {
     setTimeout(function () {
         mokujimake();
     }, 1000);
+
 });

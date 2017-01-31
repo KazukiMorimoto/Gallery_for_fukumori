@@ -5,47 +5,50 @@
     <meta charset="UTF-8">
 
     <title>SHOUICHI FUKUMORIのGallary</title>
+    <meta name="viewport" content="width=980, minimum-scale=0.1">
     <meta name="Description" content="福森翔一の個人ホームページ　過去の作品やブログを公開" <link href="css/reset.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="/img/favicon.jpg" rel="icon" type="image/x-icon" />
 
 
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <div id="logo">
-                <a href="index.html">SHOUICHI FUKUMORI</a>
-            </div>
-            <nav>
-                <ul id="menu">
-                    <li><a href="information.html">Information</a></li>
-                    <li><a href="photography.html">Photography</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="activepage"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="cf"></div>
-            <div id="contact_section">
-                <div class="contact-form">
-                    <form action="complete.php" method="post" name="contact">
-                        <p>Name</p>
-                        <input type="text" name="name" placeholder="" class="contact-name">
-                        <p>Email</p>
-                        <input type="text" name="email" placeholder="" class="contact-email">
-                        <p>Contents</p>
-                        <textarea name="message" placeholder=""></textarea>
-                        <p></p>
-                        <button type="submit" class="btn btn-contact">Send</button>
-                    </form>
+    <div id="contactwrapper">
+        <div id="wrapper">
+            <header>
+                <div id="logo">
+                    <a href="index.html">SHOUICHI FUKUMORI</a>
                 </div>
-            </div>
-        </main>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="activepage" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="cf"></div>
+                <div id="contact_section">
+                    <div class="contact-form">
+                        <form action="complete.php" method="post" name="contact">
+                            <p>Name</p>
+                            <input type="text" name="name" placeholder="" class="contact-name">
+                            <p>Email</p>
+                            <input type="text" name="email" placeholder="" class="contact-email">
+                            <p>Contents</p>
+                            <textarea name="message" placeholder=""></textarea>
+                            <p></p>
+                            <button type="submit" class="btn btn-contact">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
 </body>
 
